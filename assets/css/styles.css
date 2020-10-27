@@ -1,0 +1,70 @@
+:root {
+    --color-1: #2e4140;
+    --color-2: #ad6141;
+    --color-3: #c49422;
+    --color-4: #bea995;
+    --color-5: #98b4b2;
+    --color-6: #144013;
+    --color-back: white;
+    --font-1: "catalog";
+    --font-2: "open sans";
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: unset;
+}
+body {
+    font-family: var(--font-2);
+    background: var(--color-back);
+}
+/* Mobile Header */
+.mobile-header {
+    background: var(--color-4);
+    display: flex;
+    justify-content: space-between;
+}
+.amend-logo {
+    padding: 3px;
+}
+.amend-logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.amend-logo img {
+    height: 50px;
+}
+.mobile-taskbar {
+    display: flex;
+    align-items: center;
+}
+.mobile-taskbar ul {
+    list-style-type: none;
+    display: flex;
+}
+.mobile-taskbar ul li {
+    padding: 0px 10px;
+}
+/* Mobile Navigation */
+.mobile-navbar {
+    background: var(--color-4);
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.mobile-navbar ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+/* Hero Section */
+.hero-section {
+    background-image: url("../images/hero-logo-1.png");
+    background-size: cover;
+}
