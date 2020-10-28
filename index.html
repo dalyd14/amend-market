@@ -4,32 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="shortcut icon" href="./assets/images/logo-1.png" type="image/x-icon">
     <title>Amend</title>
 </head>
 <body>
-    <header>
-        <div class="mobile-header">
-            <div class="amend-logo">
-                <a href="">
-                    <img src="./assets/images/logo-4.png" alt="Amend logo of just the letter a">
-                </a>
-            </div>
-            <div class="mobile-taskbar">
-                <ul>
-                    <li>
-                        <a href="">
-                            search
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            cart
-                        </a>
-                    </li>
-                </ul>
-            </div>
+    <header class="mobile-header">
+        <div class="amend-logo">
+            <a href="">
+                <img src="./assets/images/logo-4.png" alt="Amend logo of just the letter a">
+            </a>
         </div>
-        <nav class="mobile-navbar">
+        <div class="mobile-taskbar">
+            <ul>
+                <li>
+                    <a href="">
+                        search
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        cart
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav class="mobile-navbar">
+        <ul>
+            <li>
+                <a href="#mission">mission</a>
+            </li>
+            <li>
+                <a href="#shop">shop</a>
+            </li>
+            <li>
+                <a href="">resources</a>
+            </li>
+            <li>
+                <a href="#contact">contact</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="desktop-header">
+        <div class="amend-logo">
+            <a href="">
+                <img src="./assets/images/logo-4.png" alt="Amend logo of just the letter a">
+            </a>
+        </div>
+        <nav class="desktop-navbar">
             <ul>
                 <li>
                     <a href="">mission</a>
@@ -45,34 +67,68 @@
                 </li>
             </ul>
         </nav>
+        <nav class="desktop-taskbar">
+            <ul>
+                <li>
+                    <a href="">
+                        search
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        cart
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
+    
     <section class="hero-section">
+        <span class="navigation-span" id="mission"></span>
         <div class="mission-statement">
             changes, modifications, learning + relearning for the better
         </div>
     </section>
+    
     <section class="store">
-        <div class="store-item">
-            <div class="item-image">
-                <img src="./assets/images/toothbrush.jpg" alt="bamboo toothbrush">
+        <span class="navigation-span" id="shop"></span>
+        <h3>shop</h3>
+        <div class="store-items">
+            <div class="store-item">
+                <div class="item-image">
+                    <img src="./assets/images/toothbrush.jpg" alt="bamboo toothbrush">
+                </div>
+                <div class="item-name">
+                    bamboo toothbrush
+                </div>
+                <div class="item-price">
+                    $5
+                </div>
             </div>
-            <div class="item-name">
-                bamboo toothbrush
-            </div>
-            <div class="item-price">
-                $5
-            </div>
+            <div class="store-item">
+                <div class="item-image">
+                    <img src="./assets/images/soap.jpg" alt="solid dish soap">
+                </div>
+                <div class="item-name">
+                    solid dish soap
+                </div>
+                <div class="item-price">
+                    $15
+                </div>
+            </div>            
         </div>
-        <div class="store-item">
-            <div class="item-image">
-                <img src="./assets/images/soap.jpg" alt="solid dish soap">
-            </div>
-            <div class="item-name">
-                solid dish soap
-            </div>
-            <div class="item-price">
-                $15
-            </div>
+    </section>
+    
+    <section class="contact">
+        <span class="navigation-span" id="contact"></span>
+        <h3>get in touch</h3>
+        <div class="contact-items">
+            <a href="mailto:kendallaroberson@gmail.com" target="_blank">
+                <img src="./assets/images/email-icon.svg" alt="">
+            </a>
+            <a href="https://www.instagram.com/amend.market/" target="_blank">
+                <img src="./assets/images/instagram.png" alt="Instagram logo">
+            </a>
         </div>
     </section>
 </body>
