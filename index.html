@@ -7,18 +7,17 @@
     <link rel="shortcut icon" href="./assets/images/logo-1.png" type="image/x-icon">
     <title>Amend</title>
 </head>
-<body>
-    <div class="mobile-navigation-overlay hidden" id="mobile-navigation-overlay">
-        <header class="mobile-navbar-header">
-            <div class="amend-logo">
-                <a href="/">
-                    <img src="./assets/images/logo-7.png" alt="Amend logo of just the letter a">
-                </a>
-            </div>
-            <a href="javascript:navAppear()" class="mobile-navbar-menu-button">
-                <img src="./assets/images/cancel.svg" alt="">
-            </a>
-        </header>
+<body>    
+    <header class="mobile-navbar-header" id="mobile-navbar-header">
+        <div class="amend-logo">
+            <a href="/" class="amend-logo-normal" id="amend-logo"></a>
+        </div>
+        <a href="javascript:navAppear()" class="mobile-menu-button menu-button-overlay" id="mobile-menu-button">
+            <div class="bar" id="top-bar"></div>
+            <div class="bar" id="bottom-bar"></div>                
+        </a>
+    </header>
+    <div class="mobile-navigation-overlay overlay-hidden" id="mobile-navigation-overlay">
         <nav class="mobile-navbar-list">
             <ul>
                 <li>
@@ -35,22 +34,7 @@
                 </li>
             </ul>
         </nav>
-
     </div>
-    <header class="mobile-header">
-        <div class="amend-logo">
-            <a href="/">
-                <img src="./assets/images/logo-1.png" alt="Amend logo of just the letter a">
-            </a>
-        </div>
-        <div>
-            <a href="javascript:navAppear()" class="mobile-menu-button">
-                <div class="top bar"></div>
-                <div class="middle bar"></div>
-                <div class="bottom bar"></div>                
-            </a>
-        </div>
-    </header>
     <header class="desktop-header">
         <div class="amend-logo">
             <a href="">

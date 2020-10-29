@@ -31,39 +31,24 @@ section span {
     top: -56px;
     visibility: hidden;
 }
+
 /* Mobile Menu Overlay */
 #mobile-navigation-overlay {
     position: fixed;
-    top: 0px;
     left: 0px;
-    background: white;
+    background: var(--color-back);
     z-index: 600;
     height: 100%;
     width: 100%;
     transition: all 750ms;
 }
-.hidden {
-    /* display: none; */
+.overlay-hidden {
     visibility: hidden;
     opacity: 0;
 }
-.displayed {
-    /* display: unset; */
+.overlay-displayed {
     visibility: visible;
     opacity: 1;
-}
-.mobile-navbar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.mobile-navbar-menu-button {
-    height: 100%;
-}
-.mobile-navbar-menu-button img {
-    height: 50px;
-    width: 50px;
-    padding: 12px 12px;
 }
 .mobile-navbar-list {
     display: flex;
@@ -74,23 +59,27 @@ section span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 100px;
 }
 .mobile-navbar-list li {
     padding: 10px 0;
 }
 
 /* Mobile Header */
-.mobile-header {
-    background: var(--color-1);
+.mobile-navbar-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* I want this to be sticky eventually */
+
+    background: var(--color-1);
+
     position: sticky;
     z-index: 500;
     top: 0px;
     color: white;
+}
+.mobile-navbar-header-overlay {
+    background: var(--color-back);
 }
 .amend-logo {
     padding: 3px;
@@ -99,63 +88,49 @@ section span {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.amend-logo img {
+
     height: 50px;
+    width: 50px;
+}
+.amend-logo-overlay {
+    background-image: url("../images/logo-7.png");
+    background-size: contain;
+    transition: all 750ms;
+}
+.amend-logo-normal {
+    background-image: url("../images/logo-8.png");
+    background-size: contain;
+    transition: all 750ms;
 }
 .mobile-menu-button {
     height: 50px;
     width: 50px;
-    padding: 12px 12px;
+    padding: 18px 12px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    z-index: 800;
 }
 .bar {
     border-bottom: 2px solid white;
+    transition: all 750ms;  
 }
-/* .middle {
-    display: unset;
-    transition: display 2s;
+.top-bar-overlay {
+    border-color: black;
+    transform: translateY(6px) rotate(45deg)
 }
-.top {
-    transform-origin: left top;
-    transition: transform 2s;
+.bottom-bar-overlay {
+    border-color: black;
+    transform:  translateY(-6px) rotate(-45deg)
 }
-.bottom {
-    transform-origin: left bottom;
-    transition: transform 2s;
-}
-.mobile-menu-button:hover .middle {
-    display: none;
-}
-.mobile-menu-button:hover .top {
-    transform-origin: left top;
-    transform: rotate(45deg) scaleX(1.34);
-} 
-.mobile-menu-button:hover .bottom {
-    transform-origin: left bottom;
-    transform: rotate(-44deg) scaleX(1.34);
-}*/
 
 /* Hide Desktop Header */
 .desktop-header {
     display: none;
 }
-/* Mobile Navigation */
-.mobile-navbar {
-    background: var(--color-1);
-    height: 30px;
-    display: flex;
-    align-items: center;
-    color: white;
-}
-.mobile-navbar ul {
-    list-style-type: none;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
+
 /* Hero Section */
 .hero-section {
     background-image: url("../images/hero-logo-3.png");
@@ -170,6 +145,7 @@ section span {
     text-align: center;
     padding: 0 30px;
 }
+
 /* Store Shopping Section */
 .store h3 {
     text-align: center;
@@ -190,6 +166,7 @@ section span {
 .item-image img {
     height: 300px;
 }
+
 /* Contact Section */
 .contact h3 {
     text-align: center;

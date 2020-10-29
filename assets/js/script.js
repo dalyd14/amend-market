@@ -1,11 +1,36 @@
 function navAppear() {
-    displayType = document.getElementById("mobile-navigation-overlay");
+    mobileNavOverlay = document.getElementById("mobile-navigation-overlay");
+    mobileNavbar = document.getElementById("mobile-navbar-header");
 
-    if (displayType.classList[1] === "hidden") {
-        displayType.classList.remove("hidden");
-        displayType.classList.add("displayed");
+    if (mobileNavOverlay.classList.contains("overlay-hidden")) {
+        mobileNavOverlay.classList.remove("overlay-hidden");
+        mobileNavOverlay.classList.add("overlay-displayed");
+        mobileNavbar.classList.add("mobile-navbar-header-overlay");
+
     } else {
-        displayType.classList.remove("displayed");
-        displayType.classList.add("hidden");
+        mobileNavOverlay.classList.remove("overlay-displayed");
+        mobileNavOverlay.classList.add("overlay-hidden");
+        mobileNavbar.classList.remove("mobile-navbar-header-overlay");
+    }
+
+    btnTopBar = document.getElementById("top-bar");
+    btnBottomBar = document.getElementById("bottom-bar");
+
+    if (btnTopBar.classList.contains("top-bar-overlay")) {
+        btnTopBar.classList.remove("top-bar-overlay");
+        btnBottomBar.classList.remove("bottom-bar-overlay");
+    } else {
+        btnTopBar.classList.add("top-bar-overlay");
+        btnBottomBar.classList.add("bottom-bar-overlay");
+    }
+
+    amendLogo = document.getElementById("amend-logo");
+
+    if (amendLogo.classList.contains("amend-logo-overlay")) {
+        amendLogo.classList.remove("amend-logo-overlay")
+        amendLogo.classList.add("amend-logo-normal")
+    } else {
+        amendLogo.classList.add("amend-logo-overlay")
+        amendLogo.classList.remove("amend-logo-normal")
     }
 }
