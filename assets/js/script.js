@@ -33,4 +33,12 @@ function navAppear() {
         amendLogo.classList.add("amend-logo-overlay")
         amendLogo.classList.remove("amend-logo-normal")
     }
+
+    pageBody = document.body;
+
+    if (pageBody.classList.contains("navigation-overlay")) {
+        pageBody.classList.remove("navigation-overlay")
+    } else {
+        pageBody.classList.add("navigation-overlay")
+    }
 }
