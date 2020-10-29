@@ -21,6 +21,7 @@ a {
 body {
     font-family: var(--font-2);
     background: var(--color-back);
+    position: relative;
 }
 section {
     position: relative;
@@ -30,14 +31,64 @@ section span {
     top: -56px;
     visibility: hidden;
 }
+/* Mobile Menu Overlay */
+#mobile-navigation-overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: white;
+    z-index: 600;
+    height: 100%;
+    width: 100%;
+    transition: all 750ms;
+}
+.hidden {
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+}
+.displayed {
+    /* display: unset; */
+    visibility: visible;
+    opacity: 1;
+}
+.mobile-navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobile-navbar-menu-button {
+    height: 100%;
+}
+.mobile-navbar-menu-button img {
+    height: 50px;
+    width: 50px;
+    padding: 12px 12px;
+}
+.mobile-navbar-list {
+    display: flex;
+    justify-content: center;
+}
+.mobile-navbar-list ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.mobile-navbar-list li {
+    padding: 10px 0;
+}
+
 /* Mobile Header */
 .mobile-header {
     background: var(--color-1);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     /* I want this to be sticky eventually */
     position: sticky;
-    z-index: 9999;
+    z-index: 500;
     top: 0px;
     color: white;
 }
@@ -52,17 +103,41 @@ section span {
 .amend-logo img {
     height: 50px;
 }
-.mobile-taskbar {
+.mobile-menu-button {
+    height: 50px;
+    width: 50px;
+    padding: 12px 12px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.mobile-taskbar ul {
-    list-style-type: none;
-    display: flex;
+.bar {
+    border-bottom: 2px solid white;
 }
-.mobile-taskbar ul li {
-    padding: 0px 10px;
+/* .middle {
+    display: unset;
+    transition: display 2s;
 }
+.top {
+    transform-origin: left top;
+    transition: transform 2s;
+}
+.bottom {
+    transform-origin: left bottom;
+    transition: transform 2s;
+}
+.mobile-menu-button:hover .middle {
+    display: none;
+}
+.mobile-menu-button:hover .top {
+    transform-origin: left top;
+    transform: rotate(45deg) scaleX(1.34);
+} 
+.mobile-menu-button:hover .bottom {
+    transform-origin: left bottom;
+    transform: rotate(-44deg) scaleX(1.34);
+}*/
+
 /* Hide Desktop Header */
 .desktop-header {
     display: none;
@@ -83,10 +158,10 @@ section span {
 }
 /* Hero Section */
 .hero-section {
-    background-image: url("../images/hero-logo-1.png");
+    background-image: url("../images/hero-logo-3.png");
     background-size: cover;
     background-position: center;
-    height: 150px;
+    height: 200px;
 
     display: flex;
     align-items: flex-end;
@@ -126,8 +201,12 @@ section span {
 .contact a {
     display: flex;
     justify-content: center;
-    padding: 10px 25px;
+    align-items: center;
+    padding: 10px;
 }
-.contact img {
-    height: 50px;
+#email {
+    height: 20px;
+}
+#insta {
+    height: 18px;
 }
