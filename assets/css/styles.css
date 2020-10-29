@@ -149,11 +149,13 @@ section span {
     padding: 0 30px;
 }
 
-/* Store Shopping Section */
-.store h3 {
+/* General Section Headers */
+section h3 {
     text-align: center;
     padding-top: 25px;
 }
+
+/* Store Shopping Section */
 .store-items {
     display: flex;
     justify-content: space-around;
@@ -170,10 +172,46 @@ section span {
     height: 300px;
 }
 
-/* Contact Section */
-.contact h3 {
-    text-align: center;
+/* Blog Section */
+.blog-wrapper {
+    display: flex;
+    flex-direction: column;
 }
+.blog-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 30px 5fr;
+
+    padding: 15px;
+    border: 1px solid var(--color-1);
+    border-radius: 5px;
+
+    margin: 15px 15px 0 15px;
+
+    background: var(--color-4);
+}
+.blog-title, .blog-author, .blog-date {
+    padding: 0 10px;
+    border-bottom: 1px solid var(--color-1);
+}
+.blog-title, .blog-author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.blog-author h5, .blog-date h5 {
+    font-weight: 100;
+}
+.blog-date {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.blog-content {
+    grid-column: span 3;
+}
+
+/* Contact Section */
 .contact-items {
     display: flex;
     justify-content: center;
