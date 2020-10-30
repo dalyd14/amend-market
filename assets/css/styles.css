@@ -176,6 +176,7 @@ section h3 {
 .blog-wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .blog-item {
     display: grid;
@@ -227,4 +228,102 @@ section h3 {
 }
 #insta {
     height: 18px;
+}
+
+@media screen and (min-width: 400px) {
+    .hero-section {
+        height: 250px;
+    }
+}
+@media screen and (min-width: 500px) {
+    .hero-section {
+        height: 300px;
+    }
+}
+@media screen and (min-width: 600px) {
+    .hero-section {
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 798px) {
+    .mobile-navbar-header {
+        display: none;
+    }
+    .mobile-navigation-overlay {
+        display: none;
+    }
+    .desktop-header {
+        display: unset;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        background: var(--color-1);
+    
+        position: sticky;
+        z-index: 500;
+        top: 0px;
+        color: white;
+    }
+    .amend-logo a {
+        height: 100px;
+        width: 100px;
+    }
+    .nav-group {
+        display: flex;
+        align-items: center;
+    }
+    .nav-group ul {
+        list-style-type: none;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .desktop-navbar {
+        padding: 0 25px;
+    }
+    .desktop-taskbar {
+        padding: 0 25px;
+    }
+    .nav-group li {
+        padding: 0 10px;
+    }
+    .hero-section {
+        height: 500px;
+    }
+
+    .store-items {
+        justify-content: center;
+    }
+    .store-item {
+        width: 40%;
+    }
+    .item-image img {
+        height: 300px;
+    }
+
+    .blog-item {
+        width: 75%;
+    }
+    
+}
+
+@media screen and (min-width: 1000px) {
+    .hero-section {
+        height: 600px;
+    }
+
+    .store-item {
+        width: 30%;
+    }
+    .item-image img {
+        height: 300px;
+    }
+
+    .blog-item {
+        width: 60%;
+    }
 }
