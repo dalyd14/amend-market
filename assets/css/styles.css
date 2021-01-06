@@ -13,7 +13,7 @@ body {
     min-height: 100vh;
     min-width: 100vw;
 
-    background-image: url('../images/amend-hero.png');
+    background-image: url('../images/backgrounds/amend-hero.png');
     background-position: center;
     background-size: cover;
 
@@ -55,7 +55,7 @@ header {
     justify-content: space-between;
 }
 .menu-btn-bar {
-    border-top: solid 2px #E4E4E4;
+    border-top: solid 2px #F8F9FA;
 }
 .shop-btn {
     margin-top: 100px;
