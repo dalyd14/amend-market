@@ -6,7 +6,7 @@ body {
     margin: 0;
     position: relative;
 }
-a {
+a, a:hover, a:visited, a:link, a:active {
     color: unset;
     text-decoration: none;
 }
@@ -36,11 +36,17 @@ ul {
     min-width: 100%;
 
     background-color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
 
-    padding-top: 40vh;
+    padding-top: 30vh;
+}
+.mobile-menu-display {
+    opacity: 1;
 }
 .mobile-menu a {
     display: block;
+    font-size: 2rem;
 }
 header {
     position: relative;
@@ -83,6 +89,9 @@ header {
 }
 .menu-btn-bar {
     border-top: solid 2px #F8F9FA;
+}
+.top-bar, .bottom-bar {
+    transition: 500ms;
 }
 .top-bar-clicked {
     transform: translateY(6px) rotate(45deg)

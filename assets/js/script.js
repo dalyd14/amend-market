@@ -22,6 +22,6 @@ $('.menu-btn').click(function() {
     $('.top-bar').toggleClass('top-bar-clicked')
     $('.bottom-bar').toggleClass('bottom-bar-clicked')
     // make the mobile menu display
-    $('.mobile-menu').toggleClass('d-none')
-
+    $('.mobile-menu ul').toggleClass('d-none')
+    $('.mobile-menu').toggleClass('mobile-menu-display')
 })
