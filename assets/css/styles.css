@@ -6,6 +6,15 @@ body {
     margin: 0;
     position: relative;
 }
+a {
+    color: unset;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 .hero {
     position: absolute;
     top: 0;
@@ -21,6 +30,18 @@ body {
     align-items: center;
     justify-content: center;
 }
+.mobile-menu {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+
+    background-color: white;
+
+    padding-top: 40vh;
+}
+.mobile-menu a {
+    display: block;
+}
 header {
     position: relative;
     z-index: 5;
@@ -33,6 +54,12 @@ header {
 }
 .cart-icon {
     margin-left: 10px;
+}
+.cart-white {
+    color: #F8F9FA;
+}
+.cart-black {
+    color: black;
 }
 .amend-logo {
     display: flex;
@@ -56,6 +83,18 @@ header {
 }
 .menu-btn-bar {
     border-top: solid 2px #F8F9FA;
+}
+.top-bar-clicked {
+    transform: translateY(6px) rotate(45deg)
+}
+.bottom-bar-clicked {
+    transform: translateY(-6px) rotate(-45deg)
+}
+.border-black {
+    border-color: black;
+}
+.menu-btn:hover {
+    cursor: pointer;
 }
 .shop-btn {
     margin-top: 100px;
