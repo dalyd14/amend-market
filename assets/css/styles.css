@@ -43,6 +43,7 @@ ul {
 }
 .mobile-menu-display {
     opacity: 1;
+    overflow: hidden;
 }
 .mobile-menu a {
     display: block;
