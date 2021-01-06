@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    font-family: "Century Gothic", "CenturyGothic", "AppleGothic", "sans-serif";
+}
+body {
+    margin: 0;
+    position: relative;
+}
+.hero {
+    position: absolute;
+    top: 0;
+
+    min-height: 100vh;
+    min-width: 100vw;
+
+    background-image: url('../images/amend-hero.png');
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header {
+    position: relative;
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+}
+.header-item {
+    flex: 1;
+}
+.cart-icon {
+    margin-left: 10px;
+}
+.amend-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.amend-logo img {
+    height: 30px;
+}
+.menu-btn {
+    margin-left: auto;
+
+    width: 50px;
+    height: 50px;
+
+    padding: 18px 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu-btn-bar {
+    border-top: solid 2px #E4E4E4;
+}
+.shop-btn {
+    margin-top: 100px;
+    font-size: 2rem;
+}
