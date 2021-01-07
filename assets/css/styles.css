@@ -4,7 +4,6 @@
 }
 body {
     margin: 0;
-    position: relative;
 }
 a, a:hover, a:visited, a:link, a:active {
     color: unset;
@@ -16,9 +15,6 @@ ul {
     margin: 0;
 }
 .hero {
-    position: absolute;
-    top: 0;
-
     min-height: 100vh;
     min-width: 100vw;
 
@@ -32,13 +28,13 @@ ul {
 }
 .mobile-menu {
     position: absolute;
-    min-height: 100%;
-    min-width: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
 
     background-color: white;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 600ms, visibility 600ms;
+    transition: opacity 400ms, visibility 400ms;
 
     padding-top: 30vh;
 }
@@ -52,7 +48,8 @@ ul {
     font-size: 2rem;
 }
 header {
-    position: relative;
+    position: absolute;
+    width: 100%;
     z-index: 5;
 
     display: flex;
@@ -110,6 +107,7 @@ header {
     cursor: pointer;
 }
 .shop-btn {
+    position: absolute;
     margin-top: 100px;
     font-size: 2rem;
 }
