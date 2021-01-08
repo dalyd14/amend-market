@@ -1,0 +1,69 @@
+.hero {
+    min-height: 95vh;
+    min-width: 100vw;
+
+    background-image: url('../images/backgrounds/amend-hero.png');
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 5vh;
+}
+.shop-btn {
+    position: absolute;
+    font-size: 2rem;
+}
+.page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-tile {
+    position: relative;
+
+    width: 90vw;
+    height: 90vw;
+
+    margin: 20px 0 0 0;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.refill-tile::after {
+    background-image: url('../images/backgrounds/gvl.jpg');
+}
+.resources-tile::after {
+    background-image: url('../images/backgrounds/hand-soap.png');
+}
+.contact-tile::after {
+    background-image: url('../images/backgrounds/spray-cloth.png');
+}
+.content-tile::after {
+    content: "";
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+.content-tile h3 {
+    text-align: right;
+    font-size: 6vw;
+    padding-right: 10px;
+}
+.content-tile p {
+    text-align: right;
+    font-size: 4vw;
+    padding-right: 10px;
+}
