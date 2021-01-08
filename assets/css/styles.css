@@ -15,7 +15,7 @@ ul {
     margin: 0;
 }
 .hero {
-    min-height: 100vh;
+    min-height: 95vh;
     min-width: 100vw;
 
     background-image: url('../images/backgrounds/amend-hero.png');
@@ -25,6 +25,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    margin-bottom: 5vh;
 }
 .mobile-menu {
     position: absolute;
@@ -95,10 +97,10 @@ header {
     transition: 500ms;
 }
 .top-bar-clicked {
-    transform: translateY(6px) rotate(45deg)
+    transform: translateY(6px) rotate(225deg)
 }
 .bottom-bar-clicked {
-    transform: translateY(-6px) rotate(-45deg)
+    transform: translateY(-6px) rotate(-225deg)
 }
 .border-black {
     border-color: black;
@@ -130,7 +132,6 @@ header {
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
-    padding-right: 10px;
 }
 .refill-tile::after {
     background-image: url('../images/backgrounds/gvl.jpg');
@@ -156,13 +157,25 @@ header {
 .content-tile h3 {
     text-align: right;
     font-size: 6vw;
+    padding-right: 10px;
 }
 .content-tile p {
     text-align: right;
     font-size: 4vw;
+    padding-right: 10px;
 }
 
 footer {
-    margin: 20px 0 10px 0;
-    text-align: center;
+    background-color: #DEDFDD;
+    margin: 20px 0 0 0;
+    padding: 20px 5vw;
+}
+footer > * {
+    padding: 20px 0;
+}
+footer p {
+    margin: 0;
+}
+.icon-set i:first-child {
+    margin-right: 10px;
 }
