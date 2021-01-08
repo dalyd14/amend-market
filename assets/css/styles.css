@@ -1,3 +1,4 @@
+@font-face { font-family: amendFont; src: url('./Handwritten_1-Regular.otf'); } 
 * {
     box-sizing: border-box;
     font-family: "Century Gothic", "CenturyGothic", "AppleGothic", "sans-serif";
@@ -46,6 +47,7 @@ ul {
 .mobile-menu a {
     display: block;
     font-size: 2rem;
+    font-family: amendFont, sans-serif;
 }
 header {
     position: absolute;
@@ -55,22 +57,26 @@ header {
     display: flex;
     align-items: center;
 }
-.header-item {
+.cart-icon, .mobile-btn {
     flex: 1;
 }
-.cart-icon {
+.cart-icon i {
     margin-left: 10px;
 }
-.cart-white {
+.white {
     color: #F8F9FA;
 }
-.cart-black {
+.black {
     color: black;
 }
 .amend-logo {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.amend-logo h1 {
+    margin: 0;
+    font-family: amendFont, sans-serif;
 }
 .amend-logo img {
     height: 30px;

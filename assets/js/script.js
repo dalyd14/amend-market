@@ -1,18 +1,23 @@
 $('.menu-btn').click(function() {
     // change cart icon color
-    if($('.cart-icon i').hasClass('cart-white')) {
-        $('.cart-icon i').removeClass('cart-white').addClass('cart-black')
+    if($('.cart-icon i').hasClass('white')) {
+        $('.cart-icon i').removeClass('white').addClass('black')
     } else {
-        $('.cart-icon i').removeClass('cart-black').addClass('cart-white')
+        $('.cart-icon i').removeClass('black').addClass('white')
     }
     // change title image color
-    if($('.amend-logo img').attr('src').includes('unstacked-logo-white')) {
-        var srcPath = $('.amend-logo img').attr('src').split('unstacked-logo-white')
-        $('.amend-logo img').attr('src',srcPath.join('unstacked-logo-black'))
+    if($('.amend-logo h1').hasClass('white')) {
+        $('.amend-logo h1').removeClass('white').addClass('black')
     } else {
-        var srcPath = $('.amend-logo img').attr('src').split('unstacked-logo-black')
-        $('.amend-logo img').attr('src',srcPath.join('unstacked-logo-white'))
+        $('.amend-logo h1').removeClass('black').addClass('white')
     }
+    // if($('.amend-logo img').attr('src').includes('unstacked-logo-white')) {
+    //     var srcPath = $('.amend-logo img').attr('src').split('unstacked-logo-white')
+    //     $('.amend-logo img').attr('src',srcPath.join('unstacked-logo-black'))
+    // } else {
+    //     var srcPath = $('.amend-logo img').attr('src').split('unstacked-logo-black')
+    //     $('.amend-logo img').attr('src',srcPath.join('unstacked-logo-white'))
+    // }
     // change the menu button colors
     if($('.menu-btn-bar').hasClass('border-black')) {
         $('.menu-btn-bar').removeClass('border-black')
